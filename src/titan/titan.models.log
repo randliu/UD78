@@ -1,0 +1,404 @@
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.21, "low": 10.81, "close": 11.11, "open": 10.85, "day": 141125, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.21, "low": 10.81, "close": 11.11, "open": 10.85, "day": 141125, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.21, "low": 10.81, "close": 11.11, "open": 10.85, "day": 141125, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.21, "low": 10.81, "close": 11.11, "open": 10.85, "day": 141125, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.21, "low": 10.81, "close": 11.11, "open": 10.85, "day": 141125, "stock": 1}, "model": "titan.dailyprice", "pk": 103}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.36, "low": 11.09, "close": 11.33, "open": 11.12, "day": 141126, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.36, "low": 11.09, "close": 11.33, "open": 11.12, "day": 141126, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 11.36, "low": 11.09, "close": 11.33, "open": 11.12, "day": 141126, "stock": 1}, "model": "titan.dailyprice", "pk": 104}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 11.56, "low": 11.24, "close": 11.4, "open": 11.4, "day": 141127, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 11.56, "low": 11.24, "close": 11.4, "open": 11.4, "day": 141127, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 11.56, "low": 11.24, "close": 11.4, "open": 11.4, "day": 141127, "stock": 1}, "model": "titan.dailyprice", "pk": 105}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 12.3, "low": 11.25, "close": 12.15, "open": 11.39, "day": 141128, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 12.3, "low": 11.25, "close": 12.15, "open": 11.39, "day": 141128, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 12.3, "low": 11.25, "close": 12.15, "open": 11.39, "day": 141128, "stock": 1}, "model": "titan.dailyprice", "pk": 106}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 12.55, "low": 11.91, "close": 12.11, "open": 12.16, "day": 141201, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 12.55, "low": 11.91, "close": 12.11, "open": 12.16, "day": 141201, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 12.55, "low": 11.91, "close": 12.11, "open": 12.16, "day": 141201, "stock": 1}, "model": "titan.dailyprice", "pk": 107}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 13.0, "low": 11.93, "close": 12.7, "open": 11.97, "day": 141202, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 13.0, "low": 11.93, "close": 12.7, "open": 11.97, "day": 141202, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 13.0, "low": 11.93, "close": 12.7, "open": 11.97, "day": 141202, "stock": 1}, "model": "titan.dailyprice", "pk": 108}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 13.13, "low": 12.39, "close": 12.65, "open": 12.76, "day": 141203, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 13.13, "low": 12.39, "close": 12.65, "open": 12.76, "day": 141203, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 13.13, "low": 12.39, "close": 12.65, "open": 12.76, "day": 141203, "stock": 1}, "model": "titan.dailyprice", "pk": 109}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 13.88, "low": 12.7, "close": 13.64, "open": 12.85, "day": 141204, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 13.88, "low": 12.7, "close": 13.64, "open": 12.85, "day": 141204, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 13.88, "low": 12.7, "close": 13.64, "open": 12.85, "day": 141204, "stock": 1}, "model": "titan.dailyprice", "pk": 110}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.5, "low": 13.3, "close": 13.95, "open": 13.9, "day": 141205, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.5, "low": 13.3, "close": 13.95, "open": 13.9, "day": 141205, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.5, "low": 13.3, "close": 13.95, "open": 13.9, "day": 141205, "stock": 1}, "model": "titan.dailyprice", "pk": 111}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.25, "low": 13.42, "close": 13.96, "open": 13.8, "day": 141208, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.25, "low": 13.42, "close": 13.96, "open": 13.8, "day": 141208, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.25, "low": 13.42, "close": 13.96, "open": 13.8, "day": 141208, "stock": 1}, "model": "titan.dailyprice", "pk": 112}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.6, "low": 12.7, "close": 13.04, "open": 13.7, "day": 141209, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.6, "low": 12.7, "close": 13.04, "open": 13.7, "day": 141209, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.6, "low": 12.7, "close": 13.04, "open": 13.7, "day": 141209, "stock": 1}, "model": "titan.dailyprice", "pk": 113}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.2, "low": 12.55, "close": 14.12, "open": 13.16, "day": 141210, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.2, "low": 12.55, "close": 14.12, "open": 13.16, "day": 141210, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.2, "low": 12.55, "close": 14.12, "open": 13.16, "day": 141210, "stock": 1}, "model": "titan.dailyprice", "pk": 114}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.96, "low": 13.92, "close": 14.24, "open": 14.29, "day": 141211, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.96, "low": 13.92, "close": 14.24, "open": 14.29, "day": 141211, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.96, "low": 13.92, "close": 14.24, "open": 14.29, "day": 141211, "stock": 1}, "model": "titan.dailyprice", "pk": 115}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.44, "low": 13.62, "close": 13.91, "open": 14.04, "day": 141212, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.44, "low": 13.62, "close": 13.91, "open": 14.04, "day": 141212, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.44, "low": 13.62, "close": 13.91, "open": 14.04, "day": 141212, "stock": 1}, "model": "titan.dailyprice", "pk": 116}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 13.71, "low": 13.31, "close": 13.62, "open": 13.71, "day": 141215, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 13.71, "low": 13.31, "close": 13.62, "open": 13.71, "day": 141215, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 13.71, "low": 13.31, "close": 13.62, "open": 13.71, "day": 141215, "stock": 1}, "model": "titan.dailyprice", "pk": 117}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.21, "low": 13.48, "close": 14.2, "open": 13.59, "day": 141216, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.21, "low": 13.48, "close": 14.2, "open": 13.59, "day": 141216, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.21, "low": 13.48, "close": 14.2, "open": 13.59, "day": 141216, "stock": 1}, "model": "titan.dailyprice", "pk": 118}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.47, "low": 13.98, "close": 15.1, "open": 14.25, "day": 141217, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.47, "low": 13.98, "close": 15.1, "open": 14.25, "day": 141217, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.47, "low": 13.98, "close": 15.1, "open": 14.25, "day": 141217, "stock": 1}, "model": "titan.dailyprice", "pk": 119}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.2, "low": 14.6, "close": 14.73, "open": 15.12, "day": 141218, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.2, "low": 14.6, "close": 14.73, "open": 15.12, "day": 141218, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.2, "low": 14.6, "close": 14.73, "open": 15.12, "day": 141218, "stock": 1}, "model": "titan.dailyprice", "pk": 120}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.16, "low": 14.46, "close": 14.92, "open": 14.75, "day": 141219, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.16, "low": 14.46, "close": 14.92, "open": 14.75, "day": 141219, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.16, "low": 14.46, "close": 14.92, "open": 14.75, "day": 141219, "stock": 1}, "model": "titan.dailyprice", "pk": 121}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.0, "low": 14.93, "close": 15.37, "open": 15.0, "day": 141222, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.0, "low": 14.93, "close": 15.37, "open": 15.0, "day": 141222, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.0, "low": 14.93, "close": 15.37, "open": 15.0, "day": 141222, "stock": 1}, "model": "titan.dailyprice", "pk": 122}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.66, "low": 14.63, "close": 15.03, "open": 15.1, "day": 141223, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.66, "low": 14.63, "close": 15.03, "open": 15.1, "day": 141223, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.66, "low": 14.63, "close": 15.03, "open": 15.1, "day": 141223, "stock": 1}, "model": "titan.dailyprice", "pk": 123}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.01, "low": 14.0, "close": 14.3, "open": 15.0, "day": 141224, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.01, "low": 14.0, "close": 14.3, "open": 15.0, "day": 141224, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.01, "low": 14.0, "close": 14.3, "open": 15.0, "day": 141224, "stock": 1}, "model": "titan.dailyprice", "pk": 124}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.97, "low": 14.34, "close": 14.76, "open": 14.51, "day": 141225, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.97, "low": 14.34, "close": 14.76, "open": 14.51, "day": 141225, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.97, "low": 14.34, "close": 14.76, "open": 14.51, "day": 141225, "stock": 1}, "model": "titan.dailyprice", "pk": 125}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.38, "low": 14.71, "close": 15.34, "open": 14.88, "day": 141226, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.38, "low": 14.71, "close": 15.34, "open": 14.88, "day": 141226, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.38, "low": 14.71, "close": 15.34, "open": 14.88, "day": 141226, "stock": 1}, "model": "titan.dailyprice", "pk": 126}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.23, "low": 15.01, "close": 15.29, "open": 15.89, "day": 141229, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.23, "low": 15.01, "close": 15.29, "open": 15.89, "day": 141229, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.23, "low": 15.01, "close": 15.29, "open": 15.89, "day": 141229, "stock": 1}, "model": "titan.dailyprice", "pk": 127}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.84, "low": 15.31, "close": 15.68, "open": 15.39, "day": 141230, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.84, "low": 15.31, "close": 15.68, "open": 15.39, "day": 141230, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.84, "low": 15.31, "close": 15.68, "open": 15.39, "day": 141230, "stock": 1}, "model": "titan.dailyprice", "pk": 128}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.62, "low": 15.46, "close": 16.59, "open": 15.64, "day": 141231, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.62, "low": 15.46, "close": 16.59, "open": 15.64, "day": 141231, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.62, "low": 15.46, "close": 16.59, "open": 15.64, "day": 141231, "stock": 1}, "model": "titan.dailyprice", "pk": 129}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 17.07, "low": 16.25, "close": 16.68, "open": 16.56, "day": 150105, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 17.07, "low": 16.25, "close": 16.68, "open": 16.56, "day": 150105, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 17.07, "low": 16.25, "close": 16.68, "open": 16.56, "day": 150105, "stock": 1}, "model": "titan.dailyprice", "pk": 130}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 17.2, "low": 16.29, "close": 16.42, "open": 16.4, "day": 150106, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 17.2, "low": 16.29, "close": 16.42, "open": 16.4, "day": 150106, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 17.2, "low": 16.29, "close": 16.42, "open": 16.4, "day": 150106, "stock": 1}, "model": "titan.dailyprice", "pk": 131}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.56, "low": 15.94, "close": 16.16, "open": 16.2, "day": 150107, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.56, "low": 15.94, "close": 16.16, "open": 16.2, "day": 150107, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.56, "low": 15.94, "close": 16.16, "open": 16.2, "day": 150107, "stock": 1}, "model": "titan.dailyprice", "pk": 132}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.34, "low": 15.53, "close": 15.57, "open": 16.25, "day": 150108, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.34, "low": 15.53, "close": 15.57, "open": 16.25, "day": 150108, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.34, "low": 15.53, "close": 15.57, "open": 16.25, "day": 150108, "stock": 1}, "model": "titan.dailyprice", "pk": 133}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.56, "low": 15.36, "close": 15.71, "open": 15.56, "day": 150109, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.56, "low": 15.36, "close": 15.71, "open": 15.56, "day": 150109, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.56, "low": 15.36, "close": 15.71, "open": 15.56, "day": 150109, "stock": 1}, "model": "titan.dailyprice", "pk": 134}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.9, "low": 15.2, "close": 15.6, "open": 15.7, "day": 150112, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.9, "low": 15.2, "close": 15.6, "open": 15.7, "day": 150112, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.9, "low": 15.2, "close": 15.6, "open": 15.7, "day": 150112, "stock": 1}, "model": "titan.dailyprice", "pk": 135}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.78, "low": 15.35, "close": 15.43, "open": 15.52, "day": 150113, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.78, "low": 15.35, "close": 15.43, "open": 15.52, "day": 150113, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.78, "low": 15.35, "close": 15.43, "open": 15.52, "day": 150113, "stock": 1}, "model": "titan.dailyprice", "pk": 136}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.9, "low": 15.5, "close": 15.71, "open": 15.57, "day": 150114, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.9, "low": 15.5, "close": 15.71, "open": 15.57, "day": 150114, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.9, "low": 15.5, "close": 15.71, "open": 15.57, "day": 150114, "stock": 1}, "model": "titan.dailyprice", "pk": 137}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.19, "low": 15.6, "close": 16.18, "open": 15.71, "day": 150115, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.19, "low": 15.6, "close": 16.18, "open": 15.71, "day": 150115, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 16.19, "low": 15.6, "close": 16.18, "open": 15.71, "day": 150115, "stock": 1}, "model": "titan.dailyprice", "pk": 138}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.5, "low": 16.07, "close": 16.24, "open": 16.27, "day": 150116, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.5, "low": 16.07, "close": 16.24, "open": 16.27, "day": 150116, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.5, "low": 16.07, "close": 16.24, "open": 16.27, "day": 150116, "stock": 1}, "model": "titan.dailyprice", "pk": 139}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.4, "low": 14.62, "close": 14.63, "open": 14.62, "day": 150119, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.4, "low": 14.62, "close": 14.63, "open": 14.62, "day": 150119, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.4, "low": 14.62, "close": 14.63, "open": 14.62, "day": 150119, "stock": 1}, "model": "titan.dailyprice", "pk": 140}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.98, "low": 14.34, "close": 14.64, "open": 14.75, "day": 150120, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.98, "low": 14.34, "close": 14.64, "open": 14.75, "day": 150120, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.98, "low": 14.34, "close": 14.64, "open": 14.75, "day": 150120, "stock": 1}, "model": "titan.dailyprice", "pk": 141}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.47, "low": 14.59, "close": 15.3, "open": 14.8, "day": 150121, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.47, "low": 14.59, "close": 15.3, "open": 14.8, "day": 150121, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.47, "low": 14.59, "close": 15.3, "open": 14.8, "day": 150121, "stock": 1}, "model": "titan.dailyprice", "pk": 142}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.31, "low": 14.96, "close": 15.13, "open": 15.3, "day": 150122, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.31, "low": 14.96, "close": 15.13, "open": 15.3, "day": 150122, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.31, "low": 14.96, "close": 15.13, "open": 15.3, "day": 150122, "stock": 1}, "model": "titan.dailyprice", "pk": 143}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.5, "low": 15.11, "close": 15.17, "open": 15.23, "day": 150123, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.5, "low": 15.11, "close": 15.17, "open": 15.23, "day": 150123, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.5, "low": 15.11, "close": 15.17, "open": 15.23, "day": 150123, "stock": 1}, "model": "titan.dailyprice", "pk": 144}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.24, "low": 14.87, "close": 15.03, "open": 15.19, "day": 150126, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.24, "low": 14.87, "close": 15.03, "open": 15.19, "day": 150126, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.24, "low": 14.87, "close": 15.03, "open": 15.19, "day": 150126, "stock": 1}, "model": "titan.dailyprice", "pk": 145}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.1, "low": 14.45, "close": 14.71, "open": 15.05, "day": 150127, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.1, "low": 14.45, "close": 14.71, "open": 15.05, "day": 150127, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.1, "low": 14.45, "close": 14.71, "open": 15.05, "day": 150127, "stock": 1}, "model": "titan.dailyprice", "pk": 146}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.84, "low": 14.41, "close": 14.53, "open": 14.6, "day": 150128, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.84, "low": 14.41, "close": 14.53, "open": 14.6, "day": 150128, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.84, "low": 14.41, "close": 14.53, "open": 14.6, "day": 150128, "stock": 1}, "model": "titan.dailyprice", "pk": 147}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.43, "low": 14.15, "close": 14.37, "open": 14.31, "day": 150129, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.43, "low": 14.15, "close": 14.37, "open": 14.31, "day": 150129, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.43, "low": 14.15, "close": 14.37, "open": 14.31, "day": 150129, "stock": 1}, "model": "titan.dailyprice", "pk": 148}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.62, "low": 14.2, "close": 14.34, "open": 14.43, "day": 150130, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.62, "low": 14.2, "close": 14.34, "open": 14.43, "day": 150130, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.62, "low": 14.2, "close": 14.34, "open": 14.43, "day": 150130, "stock": 1}, "model": "titan.dailyprice", "pk": 149}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.3, "low": 13.86, "close": 14.09, "open": 13.98, "day": 150202, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.3, "low": 13.86, "close": 14.09, "open": 13.98, "day": 150202, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.3, "low": 13.86, "close": 14.09, "open": 13.98, "day": 150202, "stock": 1}, "model": "titan.dailyprice", "pk": 150}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.6, "low": 14.2, "close": 14.57, "open": 14.35, "day": 150203, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.6, "low": 14.2, "close": 14.57, "open": 14.35, "day": 150203, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.6, "low": 14.2, "close": 14.57, "open": 14.35, "day": 150203, "stock": 1}, "model": "titan.dailyprice", "pk": 151}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.72, "low": 14.28, "close": 14.3, "open": 14.6, "day": 150204, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.72, "low": 14.28, "close": 14.3, "open": 14.6, "day": 150204, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.72, "low": 14.28, "close": 14.3, "open": 14.6, "day": 150204, "stock": 1}, "model": "titan.dailyprice", "pk": 152}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.05, "low": 14.3, "close": 14.32, "open": 15.0, "day": 150205, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.05, "low": 14.3, "close": 14.32, "open": 15.0, "day": 150205, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.05, "low": 14.3, "close": 14.32, "open": 15.0, "day": 150205, "stock": 1}, "model": "titan.dailyprice", "pk": 153}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.58, "low": 14.15, "close": 14.25, "open": 14.28, "day": 150206, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.58, "low": 14.15, "close": 14.25, "open": 14.28, "day": 150206, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.58, "low": 14.15, "close": 14.25, "open": 14.28, "day": 150206, "stock": 1}, "model": "titan.dailyprice", "pk": 154}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.54, "low": 14.0, "close": 14.41, "open": 14.25, "day": 150209, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.54, "low": 14.0, "close": 14.41, "open": 14.25, "day": 150209, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.54, "low": 14.0, "close": 14.41, "open": 14.25, "day": 150209, "stock": 1}, "model": "titan.dailyprice", "pk": 155}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.75, "low": 14.33, "close": 14.66, "open": 14.47, "day": 150210, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.75, "low": 14.33, "close": 14.66, "open": 14.47, "day": 150210, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.75, "low": 14.33, "close": 14.66, "open": 14.47, "day": 150210, "stock": 1}, "model": "titan.dailyprice", "pk": 156}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.79, "low": 14.56, "close": 14.64, "open": 14.69, "day": 150211, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.79, "low": 14.56, "close": 14.64, "open": 14.69, "day": 150211, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.79, "low": 14.56, "close": 14.64, "open": 14.69, "day": 150211, "stock": 1}, "model": "titan.dailyprice", "pk": 157}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.7, "low": 14.38, "close": 14.57, "open": 14.69, "day": 150212, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.7, "low": 14.38, "close": 14.57, "open": 14.69, "day": 150212, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.7, "low": 14.38, "close": 14.57, "open": 14.69, "day": 150212, "stock": 1}, "model": "titan.dailyprice", "pk": 158}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.85, "low": 14.51, "close": 14.63, "open": 14.62, "day": 150213, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.85, "low": 14.51, "close": 14.63, "open": 14.62, "day": 150213, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.85, "low": 14.51, "close": 14.63, "open": 14.62, "day": 150213, "stock": 1}, "model": "titan.dailyprice", "pk": 159}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.49, "low": 14.3, "close": 14.46, "open": 14.4, "day": 150216, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.49, "low": 14.3, "close": 14.46, "open": 14.4, "day": 150216, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.49, "low": 14.3, "close": 14.46, "open": 14.4, "day": 150216, "stock": 1}, "model": "titan.dailyprice", "pk": 160}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.61, "low": 14.41, "close": 14.52, "open": 14.45, "day": 150217, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.61, "low": 14.41, "close": 14.52, "open": 14.45, "day": 150217, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.61, "low": 14.41, "close": 14.52, "open": 14.45, "day": 150217, "stock": 1}, "model": "titan.dailyprice", "pk": 161}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.54, "low": 14.18, "close": 14.3, "open": 14.5, "day": 150225, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.54, "low": 14.18, "close": 14.3, "open": 14.5, "day": 150225, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.54, "low": 14.18, "close": 14.3, "open": 14.5, "day": 150225, "stock": 1}, "model": "titan.dailyprice", "pk": 162}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.73, "low": 14.19, "close": 14.67, "open": 14.29, "day": 150226, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.73, "low": 14.19, "close": 14.67, "open": 14.29, "day": 150226, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.73, "low": 14.19, "close": 14.67, "open": 14.29, "day": 150226, "stock": 1}, "model": "titan.dailyprice", "pk": 163}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 15.0, "low": 14.65, "close": 14.7, "open": 14.7, "day": 150227, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 15.0, "low": 14.65, "close": 14.7, "open": 14.7, "day": 150227, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 15.0, "low": 14.65, "close": 14.7, "open": 14.7, "day": 150227, "stock": 1}, "model": "titan.dailyprice", "pk": 164}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.83, "low": 14.41, "close": 14.57, "open": 14.78, "day": 150302, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.83, "low": 14.41, "close": 14.57, "open": 14.78, "day": 150302, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.83, "low": 14.41, "close": 14.57, "open": 14.78, "day": 150302, "stock": 1}, "model": "titan.dailyprice", "pk": 165}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.51, "low": 14.15, "close": 14.17, "open": 14.48, "day": 150303, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.51, "low": 14.15, "close": 14.17, "open": 14.48, "day": 150303, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.51, "low": 14.15, "close": 14.17, "open": 14.48, "day": 150303, "stock": 1}, "model": "titan.dailyprice", "pk": 166}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.33, "low": 14.1, "close": 14.21, "open": 14.33, "day": 150304, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.33, "low": 14.1, "close": 14.21, "open": 14.33, "day": 150304, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.33, "low": 14.1, "close": 14.21, "open": 14.33, "day": 150304, "stock": 1}, "model": "titan.dailyprice", "pk": 167}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.11, "low": 13.81, "close": 13.91, "open": 14.04, "day": 150305, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.11, "low": 13.81, "close": 13.91, "open": 14.04, "day": 150305, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.11, "low": 13.81, "close": 13.91, "open": 14.04, "day": 150305, "stock": 1}, "model": "titan.dailyprice", "pk": 168}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.09, "low": 13.91, "close": 14.05, "open": 13.92, "day": 150306, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.09, "low": 13.91, "close": 14.05, "open": 13.92, "day": 150306, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.09, "low": 13.91, "close": 14.05, "open": 13.92, "day": 150306, "stock": 1}, "model": "titan.dailyprice", "pk": 169}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.87, "low": 13.8, "close": 14.68, "open": 14.06, "day": 150309, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.87, "low": 13.8, "close": 14.68, "open": 14.06, "day": 150309, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.87, "low": 13.8, "close": 14.68, "open": 14.06, "day": 150309, "stock": 1}, "model": "titan.dailyprice", "pk": 170}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.59, "low": 14.23, "close": 14.29, "open": 14.49, "day": 150310, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.59, "low": 14.23, "close": 14.29, "open": 14.49, "day": 150310, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 14.59, "low": 14.23, "close": 14.29, "open": 14.49, "day": 150310, "stock": 1}, "model": "titan.dailyprice", "pk": 171}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.73, "low": 14.31, "close": 14.45, "open": 14.35, "day": 150311, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.73, "low": 14.31, "close": 14.45, "open": 14.35, "day": 150311, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 14.73, "low": 14.31, "close": 14.45, "open": 14.35, "day": 150311, "stock": 1}, "model": "titan.dailyprice", "pk": 172}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.43, "low": 14.59, "close": 15.13, "open": 14.75, "day": 150312, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.43, "low": 14.59, "close": 15.13, "open": 14.75, "day": 150312, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.43, "low": 14.59, "close": 15.13, "open": 14.75, "day": 150312, "stock": 1}, "model": "titan.dailyprice", "pk": 173}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.55, "low": 15.03, "close": 15.1, "open": 15.17, "day": 150313, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.55, "low": 15.03, "close": 15.1, "open": 15.17, "day": 150313, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.55, "low": 15.03, "close": 15.1, "open": 15.17, "day": 150313, "stock": 1}, "model": "titan.dailyprice", "pk": 174}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.46, "low": 15.04, "close": 15.36, "open": 15.27, "day": 150316, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.46, "low": 15.04, "close": 15.36, "open": 15.27, "day": 150316, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.46, "low": 15.04, "close": 15.36, "open": 15.27, "day": 150316, "stock": 1}, "model": "titan.dailyprice", "pk": 175}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 15.5, "low": 15.25, "close": 15.41, "open": 15.41, "day": 150317, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 15.5, "low": 15.25, "close": 15.41, "open": 15.41, "day": 150317, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 15.5, "low": 15.25, "close": 15.41, "open": 15.41, "day": 150317, "stock": 1}, "model": "titan.dailyprice", "pk": 176}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.77, "low": 15.35, "close": 15.74, "open": 15.41, "day": 150318, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.77, "low": 15.35, "close": 15.74, "open": 15.41, "day": 150318, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.77, "low": 15.35, "close": 15.74, "open": 15.41, "day": 150318, "stock": 1}, "model": "titan.dailyprice", "pk": 177}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.9, "low": 15.47, "close": 15.68, "open": 15.74, "day": 150319, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.9, "low": 15.47, "close": 15.68, "open": 15.74, "day": 150319, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.9, "low": 15.47, "close": 15.68, "open": 15.74, "day": 150319, "stock": 1}, "model": "titan.dailyprice", "pk": 178}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.96, "low": 15.33, "close": 15.69, "open": 15.67, "day": 150320, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.96, "low": 15.33, "close": 15.69, "open": 15.67, "day": 150320, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.96, "low": 15.33, "close": 15.69, "open": 15.67, "day": 150320, "stock": 1}, "model": "titan.dailyprice", "pk": 179}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.89, "low": 15.63, "close": 15.79, "open": 15.82, "day": 150323, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.89, "low": 15.63, "close": 15.79, "open": 15.82, "day": 150323, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.89, "low": 15.63, "close": 15.79, "open": 15.82, "day": 150323, "stock": 1}, "model": "titan.dailyprice", "pk": 180}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.8, "low": 15.54, "close": 15.56, "open": 15.78, "day": 150324, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.8, "low": 15.54, "close": 15.56, "open": 15.78, "day": 150324, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.8, "low": 15.54, "close": 15.56, "open": 15.78, "day": 150324, "stock": 1}, "model": "titan.dailyprice", "pk": 181}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.52, "low": 15.06, "close": 15.16, "open": 15.42, "day": 150325, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.52, "low": 15.06, "close": 15.16, "open": 15.42, "day": 150325, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.52, "low": 15.06, "close": 15.16, "open": 15.42, "day": 150325, "stock": 1}, "model": "titan.dailyprice", "pk": 182}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.42, "low": 14.98, "close": 15.22, "open": 15.08, "day": 150326, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.42, "low": 14.98, "close": 15.22, "open": 15.08, "day": 150326, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.42, "low": 14.98, "close": 15.22, "open": 15.08, "day": 150326, "stock": 1}, "model": "titan.dailyprice", "pk": 183}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.43, "low": 15.1, "close": 15.26, "open": 15.22, "day": 150327, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.43, "low": 15.1, "close": 15.26, "open": 15.22, "day": 150327, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.43, "low": 15.1, "close": 15.26, "open": 15.22, "day": 150327, "stock": 1}, "model": "titan.dailyprice", "pk": 184}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.83, "low": 15.3, "close": 15.74, "open": 15.42, "day": 150330, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.83, "low": 15.3, "close": 15.74, "open": 15.42, "day": 150330, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.83, "low": 15.3, "close": 15.74, "open": 15.42, "day": 150330, "stock": 1}, "model": "titan.dailyprice", "pk": 185}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.41, "low": 15.45, "close": 15.57, "open": 15.95, "day": 150331, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.41, "low": 15.45, "close": 15.57, "open": 15.95, "day": 150331, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 16.41, "low": 15.45, "close": 15.57, "open": 15.95, "day": 150331, "stock": 1}, "model": "titan.dailyprice", "pk": 186}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.91, "low": 15.55, "close": 15.73, "open": 15.59, "day": 150401, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.91, "low": 15.55, "close": 15.73, "open": 15.59, "day": 150401, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 15.91, "low": 15.55, "close": 15.73, "open": 15.59, "day": 150401, "stock": 1}, "model": "titan.dailyprice", "pk": 187}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.98, "low": 15.45, "close": 15.66, "open": 15.9, "day": 150402, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.98, "low": 15.45, "close": 15.66, "open": 15.9, "day": 150402, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 15.98, "low": 15.45, "close": 15.66, "open": 15.9, "day": 150402, "stock": 1}, "model": "titan.dailyprice", "pk": 188}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 17.23, "low": 17.23, "close": 17.23, "open": 17.23, "day": 150413, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 17.23, "low": 17.23, "close": 17.23, "open": 17.23, "day": 150413, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "EQUAL", "high": 17.23, "low": 17.23, "close": 17.23, "open": 17.23, "day": 150413, "stock": 1}, "model": "titan.dailyprice", "pk": 189}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 17.97, "low": 17.37, "close": 17.48, "open": 17.97, "day": 150414, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 17.97, "low": 17.37, "close": 17.48, "open": 17.97, "day": 150414, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 17.97, "low": 17.37, "close": 17.48, "open": 17.97, "day": 150414, "stock": 1}, "model": "titan.dailyprice", "pk": 190}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.29, "low": 17.36, "close": 17.87, "open": 17.43, "day": 150415, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.29, "low": 17.36, "close": 17.87, "open": 17.43, "day": 150415, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.29, "low": 17.36, "close": 17.87, "open": 17.43, "day": 150415, "stock": 1}, "model": "titan.dailyprice", "pk": 191}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.84, "low": 17.76, "close": 18.81, "open": 17.87, "day": 150416, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.84, "low": 17.76, "close": 18.81, "open": 17.87, "day": 150416, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.84, "low": 17.76, "close": 18.81, "open": 17.87, "day": 150416, "stock": 1}, "model": "titan.dailyprice", "pk": 192}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 19.45, "low": 18.28, "close": 18.32, "open": 18.96, "day": 150417, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 19.45, "low": 18.28, "close": 18.32, "open": 18.96, "day": 150417, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 19.45, "low": 18.28, "close": 18.32, "open": 18.96, "day": 150417, "stock": 1}, "model": "titan.dailyprice", "pk": 193}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.7, "low": 17.6, "close": 17.81, "open": 18.7, "day": 150420, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.7, "low": 17.6, "close": 17.81, "open": 18.7, "day": 150420, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.7, "low": 17.6, "close": 17.81, "open": 18.7, "day": 150420, "stock": 1}, "model": "titan.dailyprice", "pk": 194}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.18, "low": 17.82, "close": 18.17, "open": 17.96, "day": 150421, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.18, "low": 17.82, "close": 18.17, "open": 17.96, "day": 150421, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.18, "low": 17.82, "close": 18.17, "open": 17.96, "day": 150421, "stock": 1}, "model": "titan.dailyprice", "pk": 195}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.5, "low": 18.06, "close": 18.41, "open": 18.47, "day": 150422, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.5, "low": 18.06, "close": 18.41, "open": 18.47, "day": 150422, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.5, "low": 18.06, "close": 18.41, "open": 18.47, "day": 150422, "stock": 1}, "model": "titan.dailyprice", "pk": 196}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.67, "low": 18.07, "close": 18.17, "open": 18.5, "day": 150423, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.67, "low": 18.07, "close": 18.17, "open": 18.5, "day": 150423, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.67, "low": 18.07, "close": 18.17, "open": 18.5, "day": 150423, "stock": 1}, "model": "titan.dailyprice", "pk": 197}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.1, "low": 17.41, "close": 17.7, "open": 17.88, "day": 150424, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.1, "low": 17.41, "close": 17.7, "open": 17.88, "day": 150424, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.1, "low": 17.41, "close": 17.7, "open": 17.88, "day": 150424, "stock": 1}, "model": "titan.dailyprice", "pk": 198}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.6, "low": 17.8, "close": 18.44, "open": 17.8, "day": 150427, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.6, "low": 17.8, "close": 18.44, "open": 17.8, "day": 150427, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "RISE", "high": 18.6, "low": 17.8, "close": 18.44, "open": 17.8, "day": 150427, "stock": 1}, "model": "titan.dailyprice", "pk": 199}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 19.23, "low": 18.1, "close": 18.36, "open": 18.42, "day": 150428, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 19.23, "low": 18.1, "close": 18.36, "open": 18.42, "day": 150428, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 19.23, "low": 18.1, "close": 18.36, "open": 18.42, "day": 150428, "stock": 1}, "model": "titan.dailyprice", "pk": 200}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.86, "low": 18.41, "close": 18.48, "open": 18.6, "day": 150429, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.86, "low": 18.41, "close": 18.48, "open": 18.6, "day": 150429, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.86, "low": 18.41, "close": 18.48, "open": 18.6, "day": 150429, "stock": 1}, "model": "titan.dailyprice", "pk": 201}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.8, "low": 18.19, "close": 18.22, "open": 18.5, "day": 150430, "stock": 1}, "model": "titan.dailyprice", "pk": null}]
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.8, "low": 18.19, "close": 18.22, "open": 18.5, "day": 150430, "stock": 1}, "model": "titan.dailyprice", "pk": null}]  not exist in db
+Models aren't loaded yet.
+DailyPrice:[{"fields": {"onClose": "DROP", "high": 18.8, "low": 18.19, "close": 18.22, "open": 18.5, "day": 150430, "stock": 1}, "model": "titan.dailyprice", "pk": 202}]
+[u'141125 10.85 11.11 11.21 10.81 2219522', u'141126 11.12 11.33 11.36 11.09 2786578', u'141127 11.40 11.40 11.56 11.24 2565696', u'141128 11.39 12.15 12.30 11.25 5052034', u'141201 12.16 12.11 12.55 11.91 3657728', u'141202 11.97 12.70 13.00 11.93 3861348', u'141203 12.76 12.65 13.13 12.39 4230860', u'141204 12.85 13.64 13.88 12.70 4876202', u'141205 13.90 13.95 14.50 13.30 6397785', u'141208 13.80 13.96 14.25 13.42 7204279', u'141209 13.70 13.04 14.60 12.70 7594923', u'141210 13.16 14.12 14.20 12.55 5472089', u'141211 14.29 14.24 14.96 13.92 5959062', u'141212 14.04 13.91 14.44 13.62 3769473', u'141215 13.71 13.62 13.71 13.31 2354855', u'141216 13.59 14.20 14.21 13.48 3827980', u'141217 14.25 15.10 15.47 13.98 8431933', u'141218 15.12 14.73 15.20 14.60 4161166', u'141219 14.75 14.92 15.16 14.46 3494293', u'141222 15.00 15.37 16.00 14.93 5664355', u'141223 15.10 15.03 15.66 14.63 4348084', u'141224 15.00 14.30 15.01 14.00 3990704', u'141225 14.51 14.76 14.97 14.34 3680294', u'141226 14.88 15.34 15.38 14.71 4229379', u'141229 15.89 15.29 16.23 15.01 5290367', u'141230 15.39 15.68 15.84 15.31 3911958', u'141231 15.64 16.59 16.62 15.46 6671289', u'150105 16.56 16.68 17.07 16.25 5001871', u'150106 16.40 16.42 17.20 16.29 4268772', u'150107 16.20 16.16 16.56 15.94 2961696', u'150108 16.25 15.57 16.34 15.53 2929211', u'150109 15.56 15.71 16.56 15.36 4613634', u'150112 15.70 15.60 15.90 15.20 2870027', u'150113 15.52 15.43 15.78 15.35 1702516', u'150114 15.57 15.71 15.90 15.50 2271408', u'150115 15.71 16.18 16.19 15.60 2646841', u'150116 16.27 16.24 16.50 16.07 3125507', u'150119 14.62 14.63 15.40 14.62 4990406', u'150120 14.75 14.64 14.98 14.34 3044808', u'150121 14.80 15.30 15.47 14.59 3470440', u'150122 15.30 15.13 15.31 14.96 2156662', u'150123 15.23 15.17 15.50 15.11 2494226', u'150126 15.19 15.03 15.24 14.87 1780964', u'150127 15.05 14.71 15.10 14.45 2569419', u'150128 14.60 14.53 14.84 14.41 1741448', u'150129 14.31 14.37 14.43 14.15 1775306', u'150130 14.43 14.34 14.62 14.20 1818087', u'150202 13.98 14.09 14.30 13.86 1557868', u'150203 14.35 14.57 14.60 14.20 1748843', u'150204 14.60 14.30 14.72 14.28 1296214', u'150205 15.00 14.32 15.05 14.30 3370617', u'150206 14.28 14.25 14.58 14.15 1638355', u'150209 14.25 14.41 14.54 14.00 1719246', u'150210 14.47 14.66 14.75 14.33 1535259', u'150211 14.69 14.64 14.79 14.56 935841', u'150212 14.69 14.57 14.70 14.38 807480', u'150213 14.62 14.63 14.85 14.51 1504714', u'150216 14.40 14.46 14.49 14.30 1333875', u'150217 14.45 14.52 14.61 14.41 923713', u'150225 14.50 14.30 14.54 14.18 1267476', u'150226 14.29 14.67 14.73 14.19 1559566', u'150227 14.70 14.70 15.00 14.65 1456164', u'150302 14.78 14.57 14.83 14.41 2192373', u'150303 14.48 14.17 14.51 14.15 1744176', u'150304 14.33 14.21 14.33 14.10 1259207', u'150305 14.04 13.91 14.11 13.81 1735485', u'150306 13.92 14.05 14.09 13.91 1021773', u'150309 14.06 14.68 14.87 13.80 3161251', u'150310 14.49 14.29 14.59 14.23 1862956', u'150311 14.35 14.45 14.73 14.31 1681848', u'150312 14.75 15.13 15.43 14.59 3830028', u'150313 15.17 15.10 15.55 15.03 2813042', u'150316 15.27 15.36 15.46 15.04 2218602', u'150317 15.41 15.41 15.50 15.25 2394924', u'150318 15.41 15.74 15.77 15.35 2460585', u'150319 15.74 15.68 15.90 15.47 2345900', u'150320 15.67 15.69 15.96 15.33 3149957', u'150323 15.82 15.79 15.89 15.63 2462740', u'150324 15.78 15.56 15.80 15.54 2637191', u'150325 15.42 15.16 15.52 15.06 2167538', u'150326 15.08 15.22 15.42 14.98 1807993', u'150327 15.22 15.26 15.43 15.10 1542871', u'150330 15.42 15.74 15.83 15.30 3044764', u'150331 15.95 15.57 16.41 15.45 4025621', u'150401 15.59 15.73 15.91 15.55 2439661', u'150402 15.90 15.66 15.98 15.45 2389555', u'150413 17.23 17.23 17.23 17.23 553073', u'150414 17.97 17.48 17.97 17.37 6585476', u'150415 17.43 17.87 18.29 17.36 4374860', u'150416 17.87 18.81 18.84 17.76 4049866', u'150417 18.96 18.32 19.45 18.28 5436755', u'150420 18.70 17.81 18.70 17.60 5308511', u'150421 17.96 18.17 18.18 17.82 2635424', u'150422 18.47 18.41 18.50 18.06 3408396', u'150423 18.50 18.17 18.67 18.07 2737717', u'150424 17.88 17.70 18.10 17.41 2917599', u'150427 17.80 18.44 18.60 17.80 4072635', u'150428 18.42 18.36 19.23 18.10 5094257', u'150429 18.60 18.48 18.86 18.41 3738079', u'150430 18.50 18.22 18.80 18.19 2664573']

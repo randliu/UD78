@@ -1,0 +1,21 @@
+<html>
+	<head>stock list</head>
+	<body>
+		<table>
+			<tr>
+				<td>名称</td>
+				<td>代码</td>
+				<td>市场</td>
+			</tr>
+			{% for stock in list_stock %}
+				<tr>
+					<td>	{% stock.name %}	</td>
+					<td>	{% stock.code %}	</td>
+					<td>	{% stock.market %}	</td>
+				</tr>
+			{% endfor %}
+					
+		</table>
+		
+	</body>
+</html>

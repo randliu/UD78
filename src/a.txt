@@ -1,0 +1,2 @@
+.dump zsyh_dailyprice
+.quit
