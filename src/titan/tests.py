@@ -17,7 +17,8 @@ class UtilsTests(TestCase):
     
     def setUp(self):
         self.data = open("demo.txt")
-        self.stock = Stock.objects.get(code = 600036)
+        #self.stock = Stock.objects.get(code = 600036)
+        self.stock=Stock.objects.filter(market ="sh").get(code =1)
         
     def tearDown(self):
         self.data.close()

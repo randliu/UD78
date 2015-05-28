@@ -18,7 +18,16 @@ class Stock(models.Model):
     market  =  models.CharField(max_length = 50, default = "None")
     code    =   models.IntegerField(default = 0)
     name    =   models.CharField(max_length = 50,default = "NO NAME!" )
+    #shortName = models.CharField(max_length = 50,default = "-" )
     
+    def saveIfNotExisted(self):
+        try:
+            Stock.objects.filter(market = self.market).filter(code = self.code ).get()
+            print "Not saved, alread Existed."
+        except:
+            self.save()
+            print "Saved!"
+            
     def __str__(self):
         data = serializers.serialize("json", [self])
         s = "Stock :"+str(data)
@@ -27,13 +36,35 @@ class Stock(models.Model):
     #for sh/sz only
     def getAPI(self):
         
-        s= "http://data.gtimg.cn/flashdata/hushen/latest/daily/%s%d.js"%(self.market,self.code)
+        code =self.code
+        
+        if self.market == "sh":
+            code = str("%06d"%code)
+        if self.market == "sz":
+            #000002
+            code ="%06d"%code
+        s= "http://data.gtimg.cn/flashdata/hushen/latest/daily/%s%s.js"%(self.market,code)    
+        if self.market =="hk":
+            code ="%05d"%code
+            #http://data.gtimg.cn/flashdata/hk/daily/15/hk01299.js
+            s= "http://data.gtimg.cn/flashdata/hk/daily/15/%s%s.js"%(self.market,code)
         
         
+        if self.market == "NYSE":
+            #http://data.gtimg.cn/flashdata/us/weekly/usBABA.N.js
+            s="http://data.gtimg.cn/flashdata/us/weekly/us"+self.name+".N.js"
+            
+        if self.market =="NASDAQ":
+            #http://data.gtimg.cn/flashdata/us/weekly/usMSFT.OQ.js
+            s="http://data.gtimg.cn/flashdata/us/weekly/us"+self.name+".OQ.js"
         logger.info("API:"+s)
         return s
   
     def getDelta(self):
+        
+        #if self.market =="sh":
+        #    lastest_dailyprice = s.dailyprice_set.order_by("-day").all()[:1]
+        
         return 0.01
   
     def createRiseTrack(self,day):
@@ -104,8 +135,11 @@ class Stock(models.Model):
         #seq__min= DailyPrice.objects.all().aggregate(Min("seq"))['seq__min']
         #firstDP = DailyPrice.objects.all().get(seq=seq__min)
         firstDay = self.dailyprice_set.all().aggregate(Min("day"))['day__min']
-        firstDP = self.dailyprice_set.get(day =firstDay)
-
+        try:
+            firstDP = self.dailyprice_set.get(day =firstDay)
+        except Exception ,e:
+            print e
+            print "Stock :%s"%str(self)
         dp = firstDP.d(1)
     
         previous = firstDP
@@ -234,6 +268,7 @@ class DailyPrice(models.Model):
         try:
             o = DailyPrice.objects.all().filter(day = self.day).filter(stock__market = self.stock.market)
             o = o.filter(stock__code = self.stock.code)
+            o=o.filter(stock__name = self.stock.name)
             o = o.get()
             logger.info("%s  exist in db" % str(self))
             #print "%s  exist in db" % str(self)
@@ -254,7 +289,8 @@ class DailyPrice(models.Model):
                 #dp = self.stock.DailyPrice__set.get(day = self.day)
                 #lst_ladder = Ladder.objects.all().filter(day__gt =  self.beginDay).order_by("seq")
             
-                lst_dp = self.stock.dailyprice_set.all().filter(day__gt = self.day).order_by("day")
+                lst_dp = self.stock.dailyprice_set.filter(day__gt = self.day).order_by("day").all()[0:offset+1]
+                #lst_dp = DailyPrice.objects.raw("select * from titan_dailyprice where stock_id = %d limit %d order by day"%(self.stock))
                 dp = lst_dp[offset-1]
                 return dp
             except:
@@ -265,7 +301,7 @@ class DailyPrice(models.Model):
                 #dp = self.stock.DailyPrice__set.get(day = self.day)
                 #lst_ladder = Ladder.objects.all().filter(day__gt =  self.beginDay).order_by("seq")
             
-                lst_dp = self.stock.dailyprice_set.all().filter(day__lt = self.day).order_by("-day")
+                lst_dp = self.stock.dailyprice_set.filter(day__lt = self.day).order_by("-day").all()[0:1-offset]
                 dp = lst_dp[-offset-1]
                 return dp
             except:
@@ -288,7 +324,12 @@ class DailyPrice(models.Model):
         self.saveToDB()
 
     def isInterWith(self,dp):
+        if self.stock.market =="hk":
+            return True
+        
         delta   =   self.stock.getDelta()
+        if self.stock.market == "NASDAQ" or self.stock.market == "NYSE":
+            delta = max(delta,self.open /1000.0*2)
         #sp1=    (self.low - delta,  self.high + delta)
         #print "[%f,%f],[%f,%f]"%(dp.high,dp.low,self.high+delta,self.low+delta)
         if dp.high <    self.low - delta:
@@ -370,7 +411,7 @@ class TroughPoint(models.Model):
         
         try:
             tp = self.stock.troughpoint_set.filter(day = self.day).get()
-            print "!%s"%str(tp)
+            #print "!%s"%str(tp)
         except:
             existed = False
            
@@ -400,13 +441,14 @@ class DropTrack(models.Model):
     
     status  =   models.CharField(max_length=50,default =TRACKSTATUS.RUN )
     stock   =   models.ForeignKey(Stock)
+    count   =   models.IntegerField(default =0)
 
     
     def countLadderValue(self,ladder):
         #before = self.value 
         #self.lastValue = self.beginValue
         self.lastDay = ladder.day
-        
+        self.count = self.count +1
         if ladder.ladder == 0 or ladder.ladder == -2:
             pass
         else:
@@ -442,6 +484,11 @@ class DropTrack(models.Model):
         lst_ladder = Ladder.objects.all().filter(stock = self.stock).filter(day__gt =  self.beginDay).order_by("day")
         #lst_ladder = Ladder.objects.all().filter(day__gt =  self.beginDay).order_by("seq")
         self.lastValue  = self.beginValue
+        self.count =0
+        mark =8
+        #if self.stock.market=="hk":
+        #    mark = 6
+            
         for ladder in lst_ladder:
             
             self.countLadderValue(ladder)
@@ -451,11 +498,11 @@ class DropTrack(models.Model):
                 #self.endDay = ladder.day 
                 #self.save()
                 break
-            if self.lastValue >=8:
+            if self.lastValue >=mark:
                 self.status = TRACKSTATUS.BUY
                 #self.endDay = ladder.day 
 
-                print "sell at %d, triger by %d"%(ladder.day,self.beginDay)
+                print "[%d:%s]buy  at %d, triger by %d"%(self.stock.code,self.stock.name,ladder.day,self.beginDay)
                 #self.save()
                 break
             
@@ -473,6 +520,7 @@ class RiseTrack(models.Model):
     
     status  =   models.CharField(max_length=50,default =TRACKSTATUS.RUN )
     stock   =   models.ForeignKey(Stock)
+    count   =   models.IntegerField(default =0)
 
     def __str__(self):
         data = serializers.serialize("json", [self])
@@ -503,7 +551,10 @@ class RiseTrack(models.Model):
 
         lst_ladder = Ladder.objects.all().filter(stock = self.stock).filter(day__gt =  self.beginDay).order_by("day")
         self.lastValue  = self.beginValue
-
+        self.count =0
+        mark = 7
+        #if self.stock.market =="hk":
+        #    mark = 6
         for ladder in lst_ladder:
             self.countLadderValue(ladder)
             if self.lastValue <=  -1:
@@ -511,11 +562,11 @@ class RiseTrack(models.Model):
                 #self.lastDay = ladder.day 
                 #self.save()
                 break
-            if self.lastValue >=7:
+            if self.lastValue >=mark:
                 self.status = TRACKSTATUS.SELL
                 #self.endDay = ladder.day 
 
-                print "sell at %d, triger by %d"%(ladder.day,self.beginDay)
+                print "[%d:%s]sell at %d, triger by %d"%(self.stock.code,self.stock.name,ladder.day,self.beginDay)
                 #self.save()
                 break
         
@@ -529,7 +580,7 @@ class RiseTrack(models.Model):
     def countLadderValue(self,ladder):
         #self.lastValue = self.beginValue
         self.lastDay = ladder.day
-        
+        self. count = self.count +1
         if ladder.ladder == 0 or ladder.ladder == 2:
             pass
         else:
