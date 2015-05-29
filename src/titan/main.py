@@ -31,8 +31,8 @@ def dailyRun(market = None,code = None):
         
     for s in lst_stock:
         print time.time
-        print "\n$$$$$$$$$$$$$$$$$$$$$$$$$\n"
-        print "scaning [%06d.%s %s]"%(s.code,s.market,s.name)
+        print "\n"+"$$$$$$$$$$$$$$$$$$$$$$$$$"*2+"\n"
+        print "scaning [%06d.%s %s][seq:%d]"%(s.code,s.market,s.name,s.seq)
         api = s.getAPI()
         print "fetching daily price from %s"%api
         #print "begin:"+str(time.time())
@@ -41,6 +41,9 @@ def dailyRun(market = None,code = None):
             #print time.time()
             print "Parsing"
             n,prices = preProcess(x)
+            if n<0:
+                print n
+                
             #print time.time()
             s.parse(prices)
             #print time.time()
@@ -98,15 +101,15 @@ def report(day = 7,code=None,market = None):
     print "r=%d"%r
     
     #print "SELL:"
-    set = Stock.objects.all()
+    stock_set = Stock.objects.all()
     if code:
-        set = set.filter(code = code)
+        stock_set = set.filter(code = code)
     if market :
-        set =set.filter(market = market)
+        stock_set =set.filter(market = market)
         
     print "\n"+"\nRISE TRACK\n"+"----------"*6
     
-    for s in set:
+    for s in stock_set:
         lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.SELL).filter(lastDay__gt=r).order_by("lastDay").all()
         for dt in lst_riseTrack:
             print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
@@ -116,7 +119,7 @@ def report(day = 7,code=None,market = None):
 
     #print "BUY:"
 
-    for s in set:
+    for s in stock_set:
         lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.BUY).filter(lastDay__gt=r).order_by("lastDay").all()
         for dt in lst_dropTrack:
             print "[%4s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
