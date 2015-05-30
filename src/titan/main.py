@@ -37,6 +37,7 @@ def dailyRun(market = None,code = None):
         print "fetching daily price from %s"%api
         #print "begin:"+str(time.time())
         begin =time.time()
+        prices = None
         with contextlib.closing(urllib.urlopen(api)) as x:
             #print time.time()
             print "Parsing"
@@ -44,38 +45,52 @@ def dailyRun(market = None,code = None):
             if n<0:
                 print n
                 
-            #print time.time()
-            s.parse(prices)
-            #print time.time()
-            s.scanPeakPoint()
-            #print time.time()
-            s.scanTroughPoint()
-            #print time.time()
-            s.scanLadder()
-            #print time.time()
-            s.scanRiseTrack()
-            #print time.time()
-            s.scanDropTrack()
-            #print time.time()
-            s.runDropTrack()
-            #print time.time()
-            s.runRiseTrack()
-            #print time.time()
-            end = time.time()
-            print "time cost:"+str(end-begin)
-def reportTrack(code,market = None):  
-    s=Stock.objects.filter(code = code)
-    if market:
-        s=s.filter(market=market)
-    s=s.get()
+        s.parse(prices)
+        s.scanPeakPoint()
+        s.scanTroughPoint()
+        s.scanLadder()
+        s.scanRiseTrack()
+        s.scanDropTrack()
+        s.runDropTrack()
+        s.runRiseTrack()
+        end = time.time()
+        print "time cost:"+str(end-begin)
+def reportCritical(code=None,market = None,v =5,day =7):  
     d=datetime.datetime.now()
-    str_now=datetimeToTitanDatestr(d)
-    r = int(str_now)
-    lst_riseTrack=s.risetrack_set.filter(lastDay__gt=r).order_by("lastDay").all()
+    #str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
+    offsetDays = timedelta(day)
+    targetDay =d - offsetDays
+    str_now=datetimeToTitanDatestr(targetDay)
+    int_now = int(str_now)
+    #in 1 month
+    r=int_now
+    print "r=%d"%r
     
-    for dt in lst_riseTrack:
-        print "[%s] [%d - %d]    [%06d %s.%s] value :%2d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
-    #print s
+    #print "SELL:"
+    stock_set = Stock.objects.all()
+    if code:
+        stock_set = stock_set.filter(code = code)
+    if market :
+        stock_set =stock_set.filter(market = market)
+        
+    print "\n"+"\nRISE TRACK\n"+"----------"*6
+    
+    for s in stock_set:
+        lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.RUN).filter(lastDay__gt=r).filter(lastValue__gt=v).order_by("lastDay").all()
+        for dt in lst_riseTrack:
+            print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
+        #print "" 
+    
+    print "\n"+"\nDROP TRACK\n"+"----------"*6
+
+    #print "BUY:"
+
+    for s in stock_set:
+        lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.RUN).filter(lastDay__gt=r).filter(lastValue__gt=v).order_by("lastDay").all()
+        for dt in lst_dropTrack:
+            print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
+        #print ""
+    
 def datetimeToTitanDatestr(d):
     str_now=str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
     return str_now
@@ -103,9 +118,9 @@ def report(day = 7,code=None,market = None):
     #print "SELL:"
     stock_set = Stock.objects.all()
     if code:
-        stock_set = set.filter(code = code)
+        stock_set = stock_set.filter(code = code)
     if market :
-        stock_set =set.filter(market = market)
+        stock_set =stock_set.filter(market = market)
         
     print "\n"+"\nRISE TRACK\n"+"----------"*6
     
