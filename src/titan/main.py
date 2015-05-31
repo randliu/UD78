@@ -55,7 +55,7 @@ def dailyRun(market = None,code = None):
         s.runRiseTrack()
         end = time.time()
         print "time cost:"+str(end-begin)
-def reportCritical(code=None,market = None,v =5,day =7):  
+def track(code=None,market = None,v =5,day =7):  
     d=datetime.datetime.now()
     #str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
     offsetDays = timedelta(day)
