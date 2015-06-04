@@ -73,6 +73,9 @@ def track(code=None,market = None,v =5,day =7):
     if market :
         stock_set =stock_set.filter(market = market)
         
+    print "\n"+"#######"*6+"\nRUN\n"+"#######"*6
+
+        
     print "\n"+"\nRISE TRACK\n"+"----------"*6
     
     for s in stock_set:
@@ -90,6 +93,25 @@ def track(code=None,market = None,v =5,day =7):
         for dt in lst_dropTrack:
             print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
         #print ""
+    print "\n"    
+    print "\n"+"#######"*6+"\nFADED\n"+"#######"*6
+    
+    print "\n"+"\nRISE TRACK\n"+"----------"*6
+    
+    for s in stock_set:
+        lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.FADE).filter(lastDay__gt=r).order_by("lastDay").all()
+        for dt in lst_riseTrack:
+            print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
+        #print "" 
+    
+    print "\n"+"\nDROP TRACK\n"+"----------"*6
+
+    #print "BUY:"
+
+    for s in stock_set:
+        lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.FADE).filter(lastDay__gt=r).order_by("lastDay").all()
+        for dt in lst_dropTrack:
+            print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
     
 def datetimeToTitanDatestr(d):
     str_now=str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
@@ -126,8 +148,11 @@ def report(day = 7,code=None,market = None):
     
     for s in stock_set:
         lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.SELL).filter(lastDay__gt=r).order_by("lastDay").all()
+        
         for dt in lst_riseTrack:
-            print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
+            last_price = s.dailyprice_set.get(day = dt.lastDay ).close
+            first_price =s.dailyprice_set.get(day = dt.beginDay).close
+            print "[%s] [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,dt.count)
         #print "" 
     
     print "\n"+"\nDROP TRACK\n"+"----------"*6
@@ -137,7 +162,10 @@ def report(day = 7,code=None,market = None):
     for s in stock_set:
         lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.BUY).filter(lastDay__gt=r).order_by("lastDay").all()
         for dt in lst_dropTrack:
-            print "[%4s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
+            last_price = s.dailyprice_set.get(day = dt.lastDay ).close
+            first_price =s.dailyprice_set.get(day = dt.beginDay).close
+
+            print "[%s ] [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,dt.count)
         #print ""
 
             

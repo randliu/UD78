@@ -27,7 +27,9 @@ class Stock(models.Model):
         except:
             self.save()
             print "Saved!"
-            
+    
+    def saveIfNotExist(self):
+        self.saveIfNotExisted()
     def __str__(self):
         data = serializers.serialize("json", [self])
         s = "Stock :"+str(data)
