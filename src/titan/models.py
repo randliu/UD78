@@ -59,6 +59,12 @@ class Stock(models.Model):
         if self.market =="NASDAQ":
             #http://data.gtimg.cn/flashdata/us/weekly/usMSFT.OQ.js
             s="http://data.gtimg.cn/flashdata/us/weekly/us"+self.name+".OQ.js"
+        
+        #HSI
+        if self.code == 99999999:
+            #############99999999
+            s="http://data.gtimg.cn/flashdata/hk/weekly/hkHSI.js"
+            
         logger.info("API:"+s)
         return s
   

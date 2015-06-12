@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 '''
 Created on 2015-5-20
 
@@ -29,14 +30,19 @@ def dailyRun(market = None,code = None):
     if code is not None:
         lst_stock = lst_stock.filter(code = code )
         
+    start = None
+    end = None
+    
     for s in lst_stock:
         print time.time
         print "\n"+"$$$$$$$$$$$$$$$$$$$$$$$$$"*2+"\n"
-        print "scaning [%06d.%s %s][seq:%d]"%(s.code,s.market,s.name,s.seq)
+        print "scanning [%06d.%s %s] [seq:%d] "%(s.code,s.market,s.name,s.seq)
         api = s.getAPI()
         print "fetching daily price from %s"%api
         #print "begin:"+str(time.time())
         begin =time.time()
+        if not start:
+            start = begin
         prices = None
         with contextlib.closing(urllib.urlopen(api)) as x:
             #print time.time()
@@ -55,6 +61,10 @@ def dailyRun(market = None,code = None):
         s.runRiseTrack()
         end = time.time()
         print "time cost:"+str(end-begin)
+        
+    print "\nTOTAL TIME COST:"+str(end - start)+"\n"
+    
+    
 def track(code=None,market = None,v =5,day =7):  
     d=datetime.datetime.now()
     #str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
@@ -152,7 +162,7 @@ def report(day = 7,code=None,market = None):
         for dt in lst_riseTrack:
             last_price = s.dailyprice_set.get(day = dt.lastDay ).close
             first_price =s.dailyprice_set.get(day = dt.beginDay).close
-            print "[%s] [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,dt.count)
+            print "[%s] [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,dt.count)
         #print "" 
     
     print "\n"+"\nDROP TRACK\n"+"----------"*6
@@ -165,7 +175,7 @@ def report(day = 7,code=None,market = None):
             last_price = s.dailyprice_set.get(day = dt.lastDay ).close
             first_price =s.dailyprice_set.get(day = dt.beginDay).close
 
-            print "[%s ] [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,dt.count)
+            print "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,dt.count)
         #print ""
 
             
