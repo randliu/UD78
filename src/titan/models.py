@@ -1,7 +1,7 @@
 from django.db import models
 from django.core import serializers
 #from .utils import preProcess
-from django.db.models import Min
+from django.db.models import Min,Max
 
 
 import logging
@@ -19,6 +19,7 @@ class Stock(models.Model):
     code    =   models.IntegerField(default = 0)
     name    =   models.CharField(max_length = 50,default = "NO NAME!" )
     #shortName = models.CharField(max_length = 50,default = "-" )
+    
     
     def saveIfNotExisted(self):
         try:
@@ -597,5 +598,107 @@ class RiseTrack(models.Model):
         #self.save()
         return self.lastValue
   
+"""
+class DailyPrice(models.Model):
+    seq = models.AutoField(primary_key = True)
+    day = models.IntegerField(default = 0)
+    open = models.FloatField(default = 0)
+    close = models.FloatField(default = 0)
+    high = models.FloatField(default = 0)
+    low = models.FloatField(default = 0)
+    onClose = models.CharField(max_length=50,default = OnClose.RISE)
+    #stockSeq =   models.IntegerField(default = 0)
+    stock   =   models.ForeignKey(Stock)   
+
+"""
+#added 20150615 by rand
+class Combine(models.Model):
+    seq = models.AutoField(primary_key =True)
+    name = models.CharField(max_length=100,default = "NEW COMBINE")
+    totalValue = models.FloatField(default = 0)
+    totalCash    = models.FloatField(default = 0)
+    totalStockValue  =   models.FloatField(default=0)
+    
+    
+    def init(self,name =None):
+        if not name:
+            print "you need a name "
+        return 
+        self.name = name
+        self.save()
+    
+    def addStockHold(self,code = None,market = None,count = None):
+        s=Stock.objects.filter(market = market).filter(code= code).get()
+        sh =StockHold(stock= s,count =count,cm =self)
+        sh.flash()
+        
+        self.save()
+        
+        
+    def show(self):
+        #pass
+        
+        #lst_cash = self.cash_set.all()
+        
+        print "Cash:%8.2f\tStock Value :%8.2f\tWEIGHT:%8.2f"%(self.totalCash,self.totalStockValue ,self.totalStockValue/(self.totalCash+self.totalStockValue))
+        #lst_stock = self.stockhold_set.all()
+        #for stock in lst_stock:
+        #print "Stock Value :%8.2f"%self.totalStockValue    
+        
+        lst_stockhold = self.stockhold_set.all()
+        for stockhold in lst_stockhold:
+            print "[%6d\t%8s]\tcount:%d\tvalue:%8.2f "%(stockhold.stock.code,stockhold.stock.name,stockhold.count,stockhold.value)
+    def setCash(self,amount):
+        self.totalCash  =   amount
+        self.save()
+    
+    def flash(self):
+        lst_stock = self.stockhold_set.all()
+        value = 0
+        for stock in lst_stock:
+            stock.flash()
+            value = value +stock.value
+        self.totalStockValue = value
+        self.save()
+    
+    def __str__(self):
+        data = serializers.serialize("json", [self])
+        s = "Combine:"+str(data)
+        return s
 
         
+class Cash(models.Model):
+    seq     =   models.AutoField(primary_key = True)
+    combine =   models.ForeignKey(Combine)
+    amount  =   models.FloatField(default = 0)  
+    
+    #def flash(self):
+        
+
+class StockHold(models.Model):
+    seq     =   models.AutoField(primary_key = True)
+    count   =   models.IntegerField(default = 0)
+    stock   =   models.ForeignKey(Stock)
+    value   =   models.FloatField(default = 0)
+
+    cm      =   models.ForeignKey(Combine)
+    
+    def __str__(self):
+        data = serializers.serialize("json", [self])
+        s = "StockHold:"+str(data)
+        return s
+
+    def flash(self):
+        pass
+        #        firstDay = self.dailyprice_set.all().aggregate(Min("day"))['day__min']
+        last_day =   self.stock.dailyprice_set.all().aggregate(Max("day"))["day__max"]
+        last_dailyPrice = DailyPrice.objects.get(stock = self.stock,day = last_day)
+        price = last_dailyPrice.close
+        self.value  =   self.count * price
+        self.save()
+        
+    def getValue(self):
+        return self.value
+    
+    
+    
