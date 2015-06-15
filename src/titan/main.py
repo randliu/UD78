@@ -65,7 +65,7 @@ def dailyRun(market = None,code = None):
     print "\nTOTAL TIME COST:"+str(end - start)+"\n"
     
     
-def track(code=None,market = None,v =5,day =7):  
+def track(code=None,market = None,v =5,day =7,showFade = False):  
     d=datetime.datetime.now()
     #str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
     offsetDays = timedelta(day)
@@ -103,7 +103,10 @@ def track(code=None,market = None,v =5,day =7):
         for dt in lst_dropTrack:
             print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
         #print ""
-    print "\n"    
+    print "\n"  
+    if not showFade:
+        return
+      
     print "\n"+"#######"*6+"\nFADED\n"+"#######"*6
     
     print "\n"+"\nRISE TRACK\n"+"----------"*6
