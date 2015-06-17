@@ -634,13 +634,23 @@ class Combine(models.Model):
         
         self.save()
         
-        
+    
+    @staticmethod
+    def showAll():
+        lst_cm = Combine.objects.all()
+        for cm in lst_cm:
+            cm.show()
+            print ""
+            print ""
     def show(self):
         #pass
         
         #lst_cash = self.cash_set.all()
-        
-        print "Cash:%8.2f\tStock Value :%8.2f\tWEIGHT:%8.2f"%(self.totalCash,self.totalStockValue ,self.totalStockValue/(self.totalCash+self.totalStockValue))
+        print "-------"*10
+        #print self.name
+        #print "\n"
+        print "[%s]\tCash:%8.2f\tStock Value :%8.2f\tWEIGHT:%8.2f"%(self.name,self.totalCash,self.totalStockValue ,self.totalStockValue/(self.totalCash+self.totalStockValue))
+        print "-------"*10
         #lst_stock = self.stockhold_set.all()
         #for stock in lst_stock:
         #print "Stock Value :%8.2f"%self.totalStockValue    
