@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'sh601106',
     'sh601288',
     'titan',
+    'hammar',
     #'django_crontab',
 )
 
