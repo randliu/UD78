@@ -113,11 +113,37 @@ class Stock(models.Model):
             lst_daily_price.append(d)
     
         cnt = 0
-        """
+        
         #20150627 test daily price from tail ,to decrease time cost.
         #literally, each day only test once ,instead of handred of daily price
         #by rand
         
+        while len(lst_daily_price) > 0:
+            d= lst_daily_price.pop()
+            try:
+                if d.close < d.open:
+                    d.onClose =  OnClose.DROP
+                if d.close  == d.open:
+                    d.onClose = OnClose.EQUAL
+            
+                if d.close  > d.open:
+                    d.onClose = OnClose.RISE
+                existed =   d.testExistInDB()
+                if not existed :
+                    d.save()
+                    cnt = cnt+1
+                    logger.debug( "add daily %s"% str(d))
+                else:
+                    print "daily price existed %s . BREAK!" %str(d)
+                    break
+                
+            except Exception :
+                print "daily price existed %s .STOP!" %str(d)
+                #return -1
+                #continue
+
+            
+        """
         for d in lst_daily_price:
             try:
                 #d=lst_daily_price.pop()
