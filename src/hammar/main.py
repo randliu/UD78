@@ -21,6 +21,7 @@ def runStock(market = None ,code =None ):
 
     if market:
 """
+
 import time
 def dailyRun(market = None,code = None):
     lst_stock = Stock.objects.all()
@@ -156,10 +157,12 @@ def report(day = 1,code=None,market = None):
         stock_set = stock_set.filter(code = code)
     if market :
         stock_set =stock_set.filter(market = market)
-        
+    
     print "\n"+"\nRISE TRACK\n"+"----------"*6
     
+    
     for s in stock_set:
+        print "[%06d %s.%s]"%(s.code,s.name,s.market)
         lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.SELL).filter(lastDay__gt=r).order_by("lastDay").all()
         
         for dt in lst_riseTrack:
@@ -173,6 +176,8 @@ def report(day = 1,code=None,market = None):
     #print "BUY:"
 
     for s in stock_set:
+        print "[%06d %s.%s]"%(s.code,s.name,s.market)
+
         lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.BUY).filter(lastDay__gt=r).order_by("lastDay").all()
         for dt in lst_dropTrack:
             last_price = s.dailyprice_set.get(day = dt.lastDay ).close
@@ -180,5 +185,52 @@ def report(day = 1,code=None,market = None):
 
             print "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,dt.count)
         #print ""
+
+"""
+def report_index(day=10,code = None,market=None):
+    report(day=day,code = 99999999)
+    report(day=day,code = 1,market="sh")
+    report(day=day,code = 399001,market="sz")
+    #report(day=day,)
+
+"""
+ 
+my = [(600363,"sh"),\
+      (875,"sz"),\
+      (601766,"sh"),\
+      (777,"sz"),\
+      (601169,"sh"),\
+      (600030,"sh"),\
+      (603169,"sh"),\
+      (600585,"sh"),\
+      (60638,"sh"),\
+      (601628,"sh"),\
+      (601818,"sh"),\
+      (600299,"sh"),\
+      ]
+
+index = [\
+         (99999999,"hk"),\
+         (1,"sh"),\
+         (10,"sh"),\
+         (16,"sh"),\
+         (399001,"sz"),\
+         ]
+def report_my(day=3):
+    for (c,m) in my:
+        report(day=day,code=c,market=m)
+def track_my(day=3,showFade=False,v=4):
+    for (c,m) in my:
+        track(showFade=showFade,code=c,market=m,v=v)
+
+
+def report_index(day=3):
+    for (c,m) in index:
+        report(day=day,code=c,market=m)
+
+def track_index(day=3,showFade=False,v=4):
+    for (c,m) in index:
+        track(showFade=showFade,code=c,market=m,v=v)
+
 
             

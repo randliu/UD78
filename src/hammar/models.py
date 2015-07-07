@@ -134,7 +134,7 @@ class Stock(models.Model):
                     cnt = cnt+1
                     logger.debug( "add daily %s"% str(d))
                 else:
-                    print "daily price existed %s . BREAK!" %str(d)
+                    print "daily price existed %s . BREAK!" %str(d.day)
                     break
                 
             except Exception :
