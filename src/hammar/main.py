@@ -75,7 +75,7 @@ def track(code=None,market = None,v =6,day =7,showFade = False):
     int_now = int(str_now)
     #in 1 month
     r=int_now
-    print "r=%d"%r
+    #print "r=%d"%r
     
     #print "SELL:"
     stock_set = Stock.objects.all()
@@ -162,7 +162,7 @@ def report(day = 1,code=None,market = None):
     
     
     for s in stock_set:
-        print "[%06d %s.%s]"%(s.code,s.name,s.market)
+        #print "[%06d %s.%s]"%(s.code,s.name,s.market)
         lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.SELL).filter(lastDay__gt=r).order_by("lastDay").all()
         
         for dt in lst_riseTrack:
@@ -176,7 +176,7 @@ def report(day = 1,code=None,market = None):
     #print "BUY:"
 
     for s in stock_set:
-        print "[%06d %s.%s]"%(s.code,s.name,s.market)
+        #print "[%06d %s.%s]"%(s.code,s.name,s.market)
 
         lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.BUY).filter(lastDay__gt=r).order_by("lastDay").all()
         for dt in lst_dropTrack:
@@ -216,6 +216,29 @@ index = [\
          (16,"sh"),\
          (399001,"sz"),\
          ]
+
+
+my_hk = [\
+         (6136,"hk"),\
+         (1776,"hk"),\
+         (1613,"hk"),\
+         (1330,"hk"),\
+         (1299,"hk"),\
+         (1164,"hk"),\
+         (510,"hk"),\
+         (392,"hk"),\
+         (384,"hk"),\
+         (154,"hk"),\
+         (124,"hk"),\
+         (5,"hk"),\
+         (388,"hk"),\
+         (656,"hk"),\
+         (700,"hk"),\
+         (337,"hk"),\
+         (6886,"hk"),\
+         ]
+
+
 def report_my(day=3):
     for (c,m) in my:
         report(day=day,code=c,market=m)
@@ -232,5 +255,12 @@ def track_index(day=3,showFade=False,v=4):
     for (c,m) in index:
         track(showFade=showFade,code=c,market=m,v=v)
 
+def report_myhk(day=3):
+    for (c,m) in my_hk:
+        report(day=day,code=c,market=m)
+
+def track_myhk(day=3,showFade=False,v=4):
+    for (c,m) in my_hk:
+        track(showFade=showFade,code=c,market=m,v=v)
 
             
