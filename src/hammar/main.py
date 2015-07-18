@@ -91,8 +91,11 @@ def track(code=None,market = None,v =6,day =7,showFade = False):
     
     for s in stock_set:
         lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.RUN).filter(lastDay__gt=r).filter(lastValue__gt=v).order_by("lastDay").all()
-        for dt in lst_riseTrack:
-            print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
+        for rt in lst_riseTrack:
+            #print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
+            #print "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d"%(dt.status,dt.beginDay,first_price,dt.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,dt.count)
+            #print dt.toStr()
+            print rt.toStr()
         #print "" 
     
     print "\n"+"\nDROP TRACK\n"+"----------"*6
@@ -102,7 +105,9 @@ def track(code=None,market = None,v =6,day =7,showFade = False):
     for s in stock_set:
         lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.RUN).filter(lastDay__gt=r).filter(lastValue__gt=v).order_by("lastDay").all()
         for dt in lst_dropTrack:
-            print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
+            #print "[%s] [%d - %d]    [%06d %s.%s] value:%d count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.lastValue,dt.count)
+            print dt.toStr()
+            
         #print ""
     print "\n"  
     if not showFade:
@@ -114,8 +119,9 @@ def track(code=None,market = None,v =6,day =7,showFade = False):
     
     for s in stock_set:
         lst_riseTrack = s.risetrack_set.filter(status = TRACKSTATUS.FADE).filter(lastDay__gt=r).order_by("lastDay").all()
-        for dt in lst_riseTrack:
-            print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
+        for rt in lst_riseTrack:
+            #print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
+            print rt.toStr()
         #print "" 
     
     print "\n"+"\nDROP TRACK\n"+"----------"*6
@@ -125,8 +131,9 @@ def track(code=None,market = None,v =6,day =7,showFade = False):
     for s in stock_set:
         lst_dropTrack = s.droptrack_set.filter(status = TRACKSTATUS.FADE).filter(lastDay__gt=r).order_by("lastDay").all()
         for dt in lst_dropTrack:
-            print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
-    
+            #print "[%s] [%d - %d]    [%06d %s.%s] count:%3d"%(dt.status,dt.beginDay,dt.lastDay,s.code,s.market,s.name,dt.count)
+            print dt.toStr()
+            
 def datetimeToTitanDatestr(d):
     str_now=str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
     return str_now
@@ -207,6 +214,8 @@ my = [(600363,"sh"),\
       (601628,"sh"),\
       (601818,"sh"),\
       (600299,"sh"),\
+      (600255,"sh"),\
+
       ]
 
 index = [\
