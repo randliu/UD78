@@ -13,6 +13,8 @@ import urllib
 import contextlib
 import datetime
 
+
+
 """
 def runStock(market = None ,code =None ):
     if not code :
@@ -23,6 +25,7 @@ def runStock(market = None ,code =None ):
 """
 
 import time
+
 def dailyRun(market = None,code = None):
     lst_stock = Stock.objects.all()
     
@@ -64,8 +67,7 @@ def dailyRun(market = None,code = None):
         print "time cost:"+str(end-begin)
         
     print "\nTOTAL TIME COST:"+str(end - start)+"\n"
-    
-    
+        
 def track(code=None,market = None,v =6,day =7,showFade = False):  
     d=datetime.datetime.now()
     #str(d.year-2000)+str("%02d"%d.month)+str("%02d"%d.day)
@@ -215,7 +217,6 @@ my = [(600363,"sh"),\
       (601818,"sh"),\
       (600299,"sh"),\
       (600255,"sh"),\
-
       ]
 
 index = [\
@@ -225,7 +226,6 @@ index = [\
          (16,"sh"),\
          (399001,"sz"),\
          ]
-
 
 my_hk = [\
          (6136,"hk"),\
@@ -247,14 +247,13 @@ my_hk = [\
          (6886,"hk"),\
          ]
 
-
 def report_my(day=3):
     for (c,m) in my:
         report(day=day,code=c,market=m)
+
 def track_my(day=3,showFade=False,v=4):
     for (c,m) in my:
         track(showFade=showFade,code=c,market=m,v=v)
-
 
 def report_index(day=3):
     for (c,m) in index:
@@ -272,4 +271,4 @@ def track_myhk(day=3,showFade=False,v=4):
     for (c,m) in my_hk:
         track(showFade=showFade,code=c,market=m,v=v)
 
-            
+

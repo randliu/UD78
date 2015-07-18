@@ -511,7 +511,7 @@ class DropTrack(models.Model):
         s=self.stock
         last_price = s.dailyprice_set.get(day = self.lastDay ).close
         first_price =s.dailyprice_set.get(day = self.beginDay).close
-        ret= "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d"%(self.status,self.beginDay,first_price,self.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,self.count)
+        ret= "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tvalue:%d\tcount:%3d"%(self.status,self.beginDay,first_price,self.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,self.lastValue,self.count)
         return ret
 
     def saveIfNotExist(self):
@@ -581,7 +581,7 @@ class RiseTrack(models.Model):
         s=self.stock
         last_price = s.dailyprice_set.get(day = self.lastDay ).close
         first_price =s.dailyprice_set.get(day = self.beginDay).close
-        ret= "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d"%(self.status,self.beginDay,first_price,self.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,self.count)
+        ret= "[%s]  [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tvalue:%d\tcount:%3d"%(self.status,self.beginDay,first_price,self.lastDay,last_price,s.code,s.market,s.name,(last_price - first_price)/first_price * 100.0,self.lastValue,self.count)
         return ret
 
     def saveIfNotExist(self):
