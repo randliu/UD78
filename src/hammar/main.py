@@ -13,6 +13,9 @@ import urllib
 import contextlib
 import datetime
 
+sh="sh"
+sz="sz"
+hk="hk"
 
 
 """
