@@ -6,7 +6,7 @@ from django.db.models import Min,Max
 
 import logging
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 hdlr = logging.FileHandler("%s.log"%__name__)
 logger.addHandler(hdlr)
  
