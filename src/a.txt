@@ -1,9 +1,0 @@
-.dump zsyh_dailyprice
-
-
-.quit
-
-
-
-insert this line for test
-
