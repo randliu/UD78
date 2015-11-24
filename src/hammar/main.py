@@ -29,8 +29,8 @@ def runStock(market = None ,code =None ):
 
 import time
 
-def dailyRun(market = None,code = None):
-    lst_stock = Stock.objects.all()
+def dailyRun(market = None,code = None,startSeq = 0):
+    lst_stock = Stock.objects.all().order_by("seq")
     
     if market is not None:
         lst_stock = lst_stock.filter(market = market )
@@ -41,6 +41,14 @@ def dailyRun(market = None,code = None):
     end = None
     
     for s in lst_stock:
+	print s.seq
+	if startSeq >0:
+		if s.seq < startSeq:
+			continue
+			
+	else:
+		pass
+	
         print time.time
         print "\n"+"$$$$$$$$$$$$$$$$$$$$$$$$$"*3+"\n"
         print "scanning [%06d.%s %s] [seq:%d] "%(s.code,s.market,s.name,s.seq)
