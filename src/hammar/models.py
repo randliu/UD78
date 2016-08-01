@@ -2,6 +2,7 @@ from django.db import models
 from django.core import serializers
 #from .utils import preProcess
 from django.db.models import Min,Max
+from django.contrib import admin
 
 
 import logging
@@ -33,7 +34,7 @@ class Stock(models.Model):
         self.saveIfNotExisted()
     def __str__(self):
         data = serializers.serialize("json", [self])
-        s = "Stock :"+str(data)
+        s = "Stock :"+self.market
         return s
     
     #for sh/sz only
@@ -50,8 +51,10 @@ class Stock(models.Model):
         if self.market =="hk":
             code ="%05d"%code
             #http://data.gtimg.cn/flashdata/hk/daily/15/hk01299.js
-            s= "http://data.gtimg.cn/flashdata/hk/daily/15/%s%s.js"%(self.market,code)
-        
+            #s= "http://data.gtimg.cn/flashdata/hk/daily/15/%s%s.js"%(self.market,code)
+            #2016
+            s= "http://data.gtimg.cn/flashdata/hk/daily/16/%s%s.js"%(self.market,code)
+
         
         if self.market == "NYSE":
             #http://data.gtimg.cn/flashdata/us/weekly/usBABA.N.js
@@ -280,7 +283,18 @@ class Stock(models.Model):
                 cnt = cnt +1
         
         return cnt
-        
+    def get_dailypirce_set(self):
+        #lst_dp = self.stock.dailyprice_set.filter(day__lt = self.day).order_by("-day").all()[0:1-offset]
+
+        #return self.droptrack_set.filter(status="RUN").all()
+        return "<table> <tr><td>A</td><td>b</td></tr></table>"
+class StockAdmin(admin.ModelAdmin):
+    list_display = ('code','name','market','seq','get_dailypirce_set')
+
+
+#admin.site.register(DailyPrice,DailyPriceAdmin)
+
+admin.site.register(Stock,StockAdmin)
 class OnClose:
     RISE    =   "RISE"
     EQUAL   =   "EQUAL"
@@ -382,8 +396,11 @@ class DailyPrice(models.Model):
         
         return True
 
+class DailyPriceAdmin(admin.ModelAdmin):
+    list_display = ('day','stock','onClose')
 
-        
+
+admin.site.register(DailyPrice,DailyPriceAdmin)
 class Ladder(models.Model):
     seq = models.AutoField(primary_key = True)
     day = models.IntegerField(default = 0)
@@ -559,7 +576,8 @@ class DropTrack(models.Model):
         self.save()
         #beginLadderSeq
         
-    
+admin.site.register(DropTrack)
+
 class RiseTrack(models.Model):
     seq     =   models.AutoField(primary_key    =   True)
     beginDay   =   models.IntegerField(default = 0)
@@ -645,7 +663,9 @@ class RiseTrack(models.Model):
         
         #self.save()
         return self.lastValue
-  
+
+admin.site.register(RiseTrack)
+
 """
 class DailyPrice(models.Model):
     seq = models.AutoField(primary_key = True)

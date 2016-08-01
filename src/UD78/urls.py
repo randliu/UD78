@@ -1,6 +1,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-import titan
+import hammar
 
 urlpatterns = [
     # Examples:
@@ -8,6 +8,6 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^titan/', include(titan.urls)),
+    #url(r'^hammar/', include(hammar.urls)),
     
 ]
