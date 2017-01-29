@@ -175,7 +175,7 @@ def report(day=1, code=None, market=None):
     int_now = int(str_now)
     # in 1 month
     r = int_now
-    print "r=%d" % r
+    #print "r=%d" % r
 
     # print "SELL:"
     stock_set = Stock.objects.all()
@@ -183,20 +183,27 @@ def report(day=1, code=None, market=None):
         stock_set = stock_set.filter(code=code)
     if market:
         stock_set = stock_set.filter(market=market)
-
     print "\n" + "\nRISE TRACK\n" + "----------" * 6
 
     for s in stock_set:
         # print "[%06d %s.%s]"%(s.code,s.name,s.market)
+        #注销.因为不希望空的股票做无效的显示,用i来判断
+
+        i =0
         lst_riseTrack = s.risetrack_set.filter(status=TRACKSTATUS.SELL).filter(lastDay__gt=r).order_by("lastDay").all()
 
         for dt in lst_riseTrack:
+            if i==0:
+                #print "\n" + "\nRISE TRACK\n" + "----------" * 6
+                pass
+
             last_price = s.dailyprice_set.get(day=dt.lastDay).close
             first_price = s.dailyprice_set.get(day=dt.beginDay).close
             print "[%s] [%d @ %3.2f\t-\t%d @ %3.2f]\t[%06d %s.%s]\t%3.3f\tcount:%3d" % (
             dt.status, dt.beginDay, first_price, dt.lastDay, last_price, s.code, s.market, s.name,
             (last_price - first_price) / first_price * 100.0, dt.count)
             # print ""
+            i=i+1
 
     print "\n" + "\nDROP TRACK\n" + "----------" * 6
 
@@ -206,7 +213,11 @@ def report(day=1, code=None, market=None):
         # print "[%06d %s.%s]"%(s.code,s.name,s.market)
 
         lst_dropTrack = s.droptrack_set.filter(status=TRACKSTATUS.BUY).filter(lastDay__gt=r).order_by("lastDay").all()
+        i=0
         for dt in lst_dropTrack:
+            if i==0:
+                #print "\n" + "\nDROP TRACK\n" + "----------" * 6
+                pass
             last_price = s.dailyprice_set.get(day=dt.lastDay).close
             first_price = s.dailyprice_set.get(day=dt.beginDay).close
 
@@ -214,6 +225,7 @@ def report(day=1, code=None, market=None):
             dt.status, dt.beginDay, first_price, dt.lastDay, last_price, s.code, s.market, s.name,
             (last_price - first_price) / first_price * 100.0, dt.count)
             # print ""
+            i==i+1
 
 
 """
@@ -250,6 +262,10 @@ index = [ \
     (132, "sh"), \
     (9, "sh"), \
     (88888888, "hk"), \
+    (133,"sh"),\
+    (903,"sh"),\
+    (904,"sh"),\
+
     ]
 
 my_hk = [ \

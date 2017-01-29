@@ -13,9 +13,11 @@ class Command(BaseCommand):
 		make_option('-c','--code',dest="code",default=0,action='store',type='int',help=u'股票号码'),\
 		)
 	"""
+
 	option_list = BaseCommand.option_list+(\
 		make_option('-s','--startSeq',dest="seq",default=0,action='store',type='int',help=u'从这个seq开始拉取数据'),\
 		)
+
 	def handle(self, *args, **options):         
 		"""
 		if not options['index']:
