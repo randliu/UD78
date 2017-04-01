@@ -57,7 +57,7 @@ class Stock(models.Model):
             # http://data.gtimg.cn/flashdata/hk/daily/15/hk01299.js
             # s= "http://data.gtimg.cn/flashdata/hk/daily/15/%s%s.js"%(self.market,code)
             # 2016
-            s = "http://data.gtimg.cn/flashdata/hk/daily/16/%s%s.js" % (self.market, code)
+            s = "http://data.gtimg.cn/flashdata/hk/daily/17/%s%s.js" % (self.market, code)
 
         """
         if self.market == "NYSE":
